@@ -10,7 +10,7 @@ int main(){
 
     char name[30];
     printf("Entrez le domaine que vous voulez chercher : ");
-    scanf("%s", name);
+    scanf("%29s", name);
 
     char found[100];
 
@@ -22,7 +22,7 @@ int main(){
         return 1;
     }
 
-    while (fscanf(f, "%s", found) == 1) {
+    while (fscanf(f, "%99s", found) == 1) {
 
         int lenFound = strlen(found);
         int lenName = strlen(name);
@@ -36,7 +36,7 @@ int main(){
         }
     }
 
-    printf("%d emails trouvés.\n", i);
+    printf("%d emails trouvÃ©s.\n", i);
 
     fclose(f);
     fclose(f2);
