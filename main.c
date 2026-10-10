@@ -36,7 +36,7 @@ int main(){
         }
     }
 
-    printf("%d emails trouvés.\n", i);
+    printf("%d emails trouves.\n", i);
 
     fclose(f);
     fclose(f2);
